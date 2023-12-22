@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поиск</title>
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <link rel="stylesheet" href="assets/css/fancybox.css">
+</head>
+<body>
+    
+<!-- Чтобы весь контент подключался в дефолтный шаблон  -->
+
+   
+       <header class="header">
+          <div class="container">
+                  <div class="header__menu menu">
+                      <a class="header__logo" href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                      <nav class="menu__nav">
+                          <ul class="menu__list">
+                              <li>
+                                  <div class="menu__catalog">
+                                     <button class="menu__catalog-btn text-18px">Каталог</button> 
+                                  </div>
+                                  
+                                  <ul class="menu__submenu menu__submenu-js submenu-hover">
+                                      <li class="menu__submenu-content hov submenu-hover_inner" id="pos">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-1.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Печи</a>
+  
+                                          <ul class="menu__submenu submenu-two-hover">
+                                              <li class="menu__submenu-content submenu-two-hover-inner">
+                                                  <img class="menu__submenu-img" src="assets/img/catalog/img-1.png" alt="image">
+                                                  <a href="#" class="menu__submenu-links text-18px">Подовые печи</a>
+                                                  <ul class="menu__submenu">
+                                                      <li class="menu__submenu-content menu__submenu-content-arrow ">
+                                                          <a href="#" class="menu__submenu-links text-18px">Серия MiniRotor</a>
+                                                          <a href="#" class="menu__submenu-arrow"></a>
+                                                      </li>
+                                                      <li class="menu__submenu-content menu__submenu-content-arrow">
+                                                          <a href="#" class="menu__submenu-links text-18px">Серия RotorSlim</a>
+                                                          <a href="#" class="menu__submenu-arrow"></a>
+                                                      </li>
+                                                      <li class="menu__submenu-content menu__submenu-content-arrow">
+                                                          <a href="#" class="menu__submenu-links text-18px">Серия Rotor</a>
+                                                          <a href="#" class="menu__submenu-arrow"></a>
+                                                      </li>
+                                                  </ul>
+                                              </li>
+  
+                                              <li class="menu__submenu-content submenu-two-hover-inner">
+                                                  <img class="menu__submenu-img" src="assets/img/catalog/img-1.png" alt="image">
+                                                  <a href="#" class="menu__submenu-links text-18px">Ротационные печи</a>
+                                              </li>
+                                              <li class="menu__submenu-content submenu-two-hover-inner">
+                                                  <img class="menu__submenu-img" src="assets/img/catalog/img-1.png" alt="image">
+                                                  <a href="#" class="menu__submenu-links text-18px">Ротационные печи</a>
+                                              </li>
+                                          </ul>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-2.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Тестомесы</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-3.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Планетарные миксеры</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-4.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Тестораскаточные машины</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-5.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Расстоечные камеры</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-6.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Тестоделители</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-7.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Хлеборезки</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-8.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Измельчители сухарей</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-9.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Дозатор воды</a>
+                                      </li>
+  
+                                      <li class="menu__submenu-content submenu-hover_inner">
+                                          <img class="menu__submenu-img" src="assets/img/catalog/img-10.png" alt="image">
+                                          <a href="#" class="menu__submenu-links text-18px">Аксессуары</a>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="menu__link  menu__link-hidden">
+                                  <a href="#">Где купить</a>
+                              </li>
+                              <li class="menu__link menu__link-hidden">
+                                  <a href="#">Новости и акции</a>
+                              </li >
+                              <li class="menu__link menu__link-hidden">
+                                  <a href="#">О компании</a>
+                              </li>
+                          </ul>
+  
+                          <div class="menu__wrapper">
+                                  <form>
+                                      <div class="menu-form">
+                                          <input class="menu-form-input"  type="text" placeholder="Поиск..." id="search-focus">
+                                          <button class="menu-form_loop"></button>
+                                      </div>
+                                  </form>
+  
+                              
+                              <ul class="menu__language">
+                                  <li class="menu__language-inner text-16px white">
+                                      RU
+                                  </li>
+                              </ul>
+      
+                              <div class="menu__btn">
+                                <a class="btn-common btn-white" href="#">В магазин</a>  
+                              </div>
+                          </div>
+                          <div class="menu__icon">
+                              <span></span>
+                          </div>
+                      </nav>
+                      <div class="menu__mobile">
+                          <div class="container">
+                              <div class="menu__mobile-wrapper">
+                                  <div class="accordion" id="accordion-3">
+                                      <div class="accordion__item black">
+                                              <div class="accordion__header menu__mobile-header titel-h4-26px">
+                                                  Каталог
+                                              </div>
+                                              <div class="accordion__body">
+                                                  <div class="accordion__content">
+                                                      <div class="accordion__item">
+                                                          <div class="accordion__header menu__mobile-inner  accordion__header-arrow">
+                                                              <img src="assets/img/catalog/img-1.png" alt="img"> 
+                                                              <p class="text-18px-16px">Печи</p>
+                                                          </div>
+                                                          <div class="accordion__body pl-20px">
+                                                              <div class="accordion__content ">
+                                                                <div class="accordion__item">
+                                                                  <div class="accordion__header menu__mobile-inner accordion__header-arrow ">
+                                                                      <img src="assets/img/catalog/img-11.png" alt="img"> 
+                                                                      <p class="text-18px-16px">Подовые печи</p>
+                                                                  </div>
+                                                                  <div class="accordion__body pl-20px">
+                                                                    <div class="accordion__content">
+                                                                      <button class="menu__mobile-inner_btn text-18px-16px button-text">Серия MiniROTOR</button>
+                                                                      <button class="menu__mobile-inner_btn text-18px-16px button-text">Серия ROTOR Slim</button>   
+                                                                      <button class="menu__mobile-inner_btn text-18px-16px button-text">Серия ROTOR</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                          
+                                                                <div class="accordion__item">
+                                                                  <div class="accordion__header menu__mobile-inner accordion__header-arrow ">
+                                                                      <img src="assets/img/catalog/img-12.png" alt="img"> 
+                                                                      <p class="text-18px-16px">Ротационные печи</p>
+                                                                  </div>
+                                                                  <div class="accordion__body pl-20px">
+                                                                    <div class="accordion__content">
+                                                                      <button class="menu__mobile-inner_btn text-18px-16px button-text">Серия MiniROTOR</button>
+                                                                      <button class="menu__mobile-inner_btn text-18px-16px button-text">Серия ROTOR Slim</button>   
+                                                                      <button class="menu__mobile-inner_btn text-18px-16px button-text">Серия ROTOR</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                      </div> 
+                                                  </div>
+                                              </div>
+                                      </div>
+                                      <div class="menu__mobile-flex">
+                                          <a href="#" class="menu__mobile-header titel-h4-26px">
+                                              Где купить
+                                          </a>             
+                                          <a href="#" class="menu__mobile-header titel-h4-26px">
+                                              Новости и акции
+                                          </a>         
+                                          <a href="#" class="menu__mobile-header titel-h4-26px">
+                                              О компании
+                                          </a>                
+                                      </div>
+                                  
+  
+                                  </div>
+                              </div>
+                              <div class="menu__mobile-link mt-40px ">
+                                  <a href="#" class="menu__mobile-link_wrap menu__mobile-link_wrap-line pb-20px">
+                                      <img src="assets/img/link-mobile.svg" alt="link">
+                                      <p class="text-18px-16px">Перейти в интернет-магазин</p>
+                                  </a>
+                                  <a href="mailto:info@wlbake.com" class="menu__mobile-link_wrap">
+                                      <img src="assets/img/mail.svg" alt="link">
+                                      <p class="text-18px-16px">info@wlbake.com</p>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+  
+              </div>
+              <div class="header__drop drop">
+                  <div class="container">
+                      <div class="drop__content">
+                          <div class="drop-close">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                  <path d="M23.542 23.5421L8.45709 8.45715" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                                  <path d="M23.5429 8.45715L8.45796 23.5421" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                                  </svg>
+                          </div>
+                          <div class="drop__content-wrap">
+                              <h4 class="titel-26px white">Категории</h4>
+                              <div class="search__categories-inner">
+                                  <a href="#" class="search__categories-oval text-18px black">
+                                      Спиральные тестомесы
+                                  </a>
+                                  <a href="#" class="search__categories-oval text-18px black">
+                                      Вилочные тестомесы
+                                  </a>
+                                  <a href="#" class="search__categories-oval text-18px black">
+                                      Двуручные тестомесы
+                                  </a>
+                              </div>
+                         </div>  
+                         <div class="drop__content-wrap">
+                              <div class="drop__content-wrap-titel">
+                                  <h4 class="titel-26px white">Товары</h4>
+                                  <a class="links text-18px white" href="#">
+                                      Смотреть все
+                                   </a>
+                              </div>
+                              <div class="drop__content-wrap_inner">
+                                  <a class="drop-product">
+                                      <div class="drop-product-img">
+                                          <img src="assets/img/bake-1.png" alt="bake">
+                                      </div>
+                                      <div class="drop-product__inner">
+                                          <div class="drop-product__inner-text">
+                                              <p class="text-18px-light">Тестораскаточная машина DST SM 500</p>
+                                          </div>
+                                          <div class="drop-product__inner-cost">
+                                              <p class="text-18-accent">15541 EUR</p>
+                                          </div>
+                                      </div>
+                                  </a> 
+                                  
+                                  <a class="drop-product">
+                                      <div class="drop-product-img">
+                                          <img src="assets/img/bake-1.png" alt="bake">
+                                      </div>
+                                      <div class="drop-product__inner">
+                                          <div class="drop-product__inner-text">
+                                              <p class="text-18px-light">Тестораскаточная машина DST SM 500</p>
+                                          </div>
+                                          <div class="drop-product__inner-cost">
+                                              <p class="text-18-accent">15541 EUR</p>
+                                          </div>
+                                      </div>
+                                  </a> 
+  
+                                  <a class="drop-product">
+                                      <div class="drop-product-img">
+                                          <img src="assets/img/bake-1.png" alt="bake">
+                                      </div>
+                                      <div class="drop-product__inner">
+                                          <div class="drop-product__inner-text">
+                                              <p class="text-18px-light">Тестораскаточная машина DST SM 500</p>
+                                          </div>
+                                          <div class="drop-product__inner-cost">
+                                              <p class="text-18-accent">15541 EUR</p>
+                                          </div>
+                                      </div>
+                                  </a> 
+                                  <a class="drop-product">
+                                      <div class="drop-product-img">
+                                          <img src="assets/img/bake-1.png" alt="bake">
+                                      </div>
+                                      <div class="drop-product__inner">
+                                          <div class="drop-product__inner-text">
+                                              <p class="text-18px-light">Тестораскаточная машина DST SM 500 с увлажнителем воздуха</p>
+                                          </div>
+                                          <div class="drop-product__inner-cost">
+                                              <p class="text-18-accent">15541 EUR</p>
+                                          </div>
+                                      </div>
+                                  </a> 
+                              </div>
+                          </div>  
+                      </div>
+  
+                      <div class="drop__unfortunately text-26px-cl-light">
+                          К сожалению, по вашему запросу ничего не найдено
+                      </div>
+                  </div>
+              </div>
+      </header>   
+  <main class="pt-60px">
+      <section class="search">
+          <div class="container">
+             <h2 class="titel-h2 pb-80px">Товары по запросу «Печь»</h2> 
+  
+             <div class="search__categories pb-60px">
+                  <h4 class="titel-26px">Категории:</h4>
+                  <div class="search__categories-inner">
+                      <a href="#" class="search__categories-oval text-18px black">
+                          Ротационные печи
+                      </a>
+                      <a href="#" class="search__categories-oval text-18px black">
+                          Подовые печи
+                      </a>
+                  </div>
+             </div>
+  
+             <h4 class="titel-26px pb-40px">Товары:</h4>
+  
+             <div class="search__wrapper pb-60px">
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+  
+                  <a class="search__wrapper-item product">
+                      <div class="product__img">
+                          <img src="assets/img/bake-1.png" alt="bake">
+                      </div>
+                      <div class="product__inner">
+                          <div class="product__inner-text">
+                              <p class="text-18px-light">Ротационная печь MiniROTOR Smart 40x60 (с расстойкой)</p>
+                          </div>
+                          <div class="product__inner-cost">
+                              <p class="text-18-accent">15541 EUR</p>
+                          </div>
+                      </div>
+                  </a> 
+             </div>
+             <div class="search__item pb-160px">
+                  <div class="pagination">
+                      <ul class="pagination-list">
+                      <li><a class="pagination-list__item text-18px pagination-list__active"  href="#">1</a></li>
+                      <li><a class="pagination-list__item text-18px" href="#">2</a></li>
+                      <li><a class="pagination-list__item text-18px" href="#">3</a></li>
+                      <li>
+                          <a class="pagination-list__arrow" href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                  <path d="M25.0785 18.7143L30.864 24.4997M30.864 24.4997L25.0785 30.2851M30.864 24.4997H18.136" stroke="#0B0B0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                          </a>
+                      </li>
+                      </ul>
+                  </div>
+                
+                  <button class="btn-common btn-transparent-black search__item-btn" type="button">Показать ещё</button>
+              </div>
+          </div>
+      </section>
+      
+  </main>
+  <footer class="footer">
+      <div class="container">
+          <div class="footer__wrapper">
+              <div class="footer__wrapper-top">
+                  <nav class="footer__wrapper-top-nav">
+                      <ul class="footer__wrapper-top-nav-list">
+                          <li class="footer__wrapper-top-nav-list-link"><a class="text-18px-white text-hover-accent" href="#">Каталог</a></li>
+                          <li class="footer__wrapper-top-nav-list-link"><a class="text-18px-white text-hover-accent" href="#">Где купить</a></li>
+                          <li class="footer__wrapper-top-nav-list-link"><a class="text-18px-white text-hover-accent" href="#">Новости и акции</a></li>
+                          <li class="footer__wrapper-top-nav-list-link"><a class="text-18px-white text-hover-accent" href="#">О компании</a></li>
+                          <li class="footer__wrapper-top-nav-list-link"><a class="text-18px-white text-hover-accent" href="mailto:info@wlbake.com">info@wlbake.com</a></li>
+                      </ul> 
+                      
+                      <div class="footer__wrapper-top_btns">
+                          <button data-modal="question" class="btn-common btn-white btn-modal">Задать вопрос</button>
+                          <button data-modal="subscription" class="btn-common btn-transparent-white btn-modal">Подписаться на рассылку</button>
+                      </div>
+                  </nav>
+              </div>
+  
+              <div class="footer__wrapper-bottom">
+                  <p class="text-12px-middle">&copy; 2023 Все права защищены</p>
+                  <a href="#" class="text-12px-middle">Политика конфиденциальности</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+      <div class="container">
+              <!-- Будьте в курсе свежих новостей и актуальных новинок! -->
+          <div class="overlay">
+              <div class="modal js-modal" data-modal="subscription">
+                  <div class="modal__close">&times;</div>
+                  <div class="modal__content">
+                      <div class="modal__content-inner">
+                          <h4 class="modal__title titel-h4-26px">Будьте в курсе свежих новостей и актуальных новинок!</h4>
+                          <div class="modal__text text-18px-light">
+                              Вы сможете получить письма с выгодными предложениями и скидками.
+                          </div>
+                      </div>
+                      <div class="modal__content-inner">
+                          <input autocomplete="off" required minlength="3" placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                          <input autocomplete="off" required minlength="3" placeholder="Ваша почта" name="email" type="email" class="modal__input">
+                      </div>
+      
+                      <div class="modal__content-inner modal__content-inner_center">
+                          <button class="btn-common btn-black modal-btn">Подписаться</button>
+                          
+                          <p class="modal__content-inner_agreement text-14px black">
+                              Нажимая кнопку “Подписаться” вы соглашаетесь на обработку <a class="blue" href="#">персональных данных</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Задайте вопрос  -->
+              <div class="modal js-modal" data-modal="question">
+                  <div class="modal__close">&times;</div>
+                  <div class="modal__content">
+                      <div class="modal__content-inner">
+                          <h4 class="modal__title titel-h4-26px">Задайте вопрос</h4>
+                          <div class="modal__text text-18px-light">
+                              Задайте свой вопрос и мы постараемся ответить вам в ближайшее время
+                          </div>
+                      </div>
+                      <div class="modal__content-inner">
+                          <input autocomplete="off" required minlength="3" placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                          <input autocomplete="off" required minlength="3" placeholder="Ваш телефон" name="email" type="tel" class="modal__input">
+  
+                          
+                          <div class="modal__content-inner_message">
+                              <textarea autocomplete="off" placeholder="Оставьте ваш вопрос"></textarea>
+                          </div>
+                      </div>
+      
+                      <div class="modal__content-inner modal__content-inner_center">
+                          <button class="btn-common btn-black modal-btn">Отправить</button>
+                          
+                          <p class="modal__content-inner_agreement text-14px black">
+                              Нажимая кнопку “Отправить” вы соглашаетесь на обработку <a class="blue" href="#">персональных данных</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+  
+          <!-- Подписка оформлена! -->
+          <!-- <div class="modal modal-min">
+                  <div class="modal__close">&times;</div>
+                  <div class="modal__content">
+                      <div class="modal__content-inner">
+                          <h4 class="modal__title titel-h4-26px">Подписка оформлена!!</h4>
+                      </div>
+                  </div>
+              </div> -->
+  
+              <!-- ошибка -->
+          <!-- <div class="modal modal-min" id="eror">
+              <div class="modal__close">&times;</div>
+              <div class="modal__content">
+                      <div class="modal__content-inner">
+                          <h4 class="modal__title titel-h4-26px">Ошибка!</h4>
+                          <div class="modal__text text-18px-light">
+                              Произошла какая-то ошибка, форма не отправлена,  пожалуйста попробуйте еще раз.
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+  
+          <!-- Cпасибо! -->
+          <!-- <div class="modal modal-min" id="thanks">
+              <div class="modal__close">&times;</div>
+              <div class="modal__content">
+                  <div class="modal__content-inner">
+                      <h4 class="modal__title titel-h4-26px">Cпасибо!</h4>
+                      <div class="modal__text text-18px-light">
+                          Ваш вопрос отправлен.
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+              
+          </div>
+      </div>  
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/youtube.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/ringe.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
